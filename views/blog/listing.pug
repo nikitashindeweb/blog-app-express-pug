@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title Blogs
+body 
+  include ../layout/nav.pug
+  <div class="container">
+  h1 Latest Blogs
+  <div class="row">
+    each item in blogs
+      <div class="col-3 m-1">
+        <div class="card" style="width: 18rem;">
+          <h5 class="card-header">#{item.title}</h5>
+          <div class="card-body">
+            <p class="card-text">#{item.description}</p>
+            a(href=`/blogs/${item.slug}` name=`${item/title}` title=`${item/title}`) Read More
+          </div>
+        </div>
+      </div>
