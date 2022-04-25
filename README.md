@@ -1,8 +1,8 @@
 # Getting Started with Blog  Express App
 
-This is simple basic blog app using Express & pug,
-mainly contain blog list & view.
-here static data used to show blogs 
+This is simple basic blog app using Express & pug, \
+mainly contain blog list & view. \
+here static data used to show blogs.
 
 ## Available Scripts
 
